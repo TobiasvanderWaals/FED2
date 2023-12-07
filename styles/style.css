@@ -1,0 +1,327 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'Country Market';
+	src:
+		local("Country Market"),
+		url("Country Market.otf") format("opentype"),
+		url("Country Market.ttf") format("truetype");
+}
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text: white;
+	--color-background: black;
+	--announcement-font: 'Playfair Display', serif;
+	--article-font: 'montserrat', serif;
+	--heading-font: 'Country Market', serif;
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+html {
+	width: 430px;
+}
+
+body {
+	background-color: black;
+display: block;
+	position: relative;
+	max-width: 100%;
+	margin: 0;
+}
+
+header {
+
+	position: sticky;
+	top: 0em;
+	background: black;
+}
+
+main {
+	background-color: #071520;
+	max-width: 100%;
+
+}
+
+
+h1 {
+	display: none;
+
+}
+
+h1+img {
+	align-self: center;
+	aspect-ratio: 3/2;
+	object-fit: cover;
+
+}
+
+a img {
+	width: 100%;
+	max-width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+img {
+	width: 100%;
+}
+nav.toonMenu{
+	translate: 0% 0%;
+}
+
+nav {
+background-color: #071520;
+top: 0;
+left: 0;
+bottom: 0;
+right: 2em;
+transition: translate .3s;
+position: fixed;
+translate: -100% 0%;
+}
+
+header svg {
+
+	color: white;
+	stroke-width: 2px;
+	height: 20px;
+	
+	top: 3px;
+
+
+}
+
+header ul {
+	display: flex;
+	flex-direction: row;
+}
+
+header ul li {
+
+	height: 0px;
+}
+
+svg {
+	color: white;
+	max-height: 30px;
+}
+
+button {
+	all: unset;
+}
+
+button svg{
+	height: 15px;
+}
+
+header ul li:nth-of-type(1) {
+
+
+	margin-right: 19em;
+	margin-left: -1em;
+
+}
+
+header ul li:nth-of-type(2) {
+margin-right: 1em;
+	
+}
+header ul li:nth-of-type(3) {
+
+	margin-right: 1em;
+
+}
+
+section {
+	padding-bottom: 2em;
+}
+
+p {
+	color: white;
+	text-align: center;
+	font-family: var(--article-font);
+	font-weight: 200;
+	padding: 1em;
+	margin-top: 0px;
+
+}
+
+article {
+	display: flex;
+	flex-direction: column;
+}
+
+article:nth-of-type(1) h2 {
+	font-family: var(--announcement-font);
+	color: white;
+	font-size: 14px;
+	line-height: 28px;
+	margin: 0px 9.5px;
+
+}
+
+article:nth-of-type(2) h2 {
+	font-family: var(--article-font);
+	color: white;
+	padding: 1em;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 600;
+
+}
+
+article a {
+
+	font-family: 'montserrat';
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: white;
+	background-color: #994545;
+	padding: 16px 30px;
+	text-decoration: none;
+	text-align: center;
+	margin-left: 2em;
+	margin-right: 2em;
+
+}
+
+
+
+article:first-of-type {
+	padding: 12px 15px 25px;
+	max-width: 100%;
+	top: 0px;
+
+}
+
+h2 {
+	color: white;
+	text-align: center;
+	font-family: var(--heading-font);
+	font-size: 40px;
+	margin-top: 0.5em;
+	margin-bottom: 0px;
+}
+
+h3 {
+	color: white;
+	text-align: center;
+	font-family: var(--heading-font);
+	font-size: 36px;
+	text-transform: uppercase;
+	margin-bottom: 0px;
+}
+
+h4 {
+	color: white;
+
+	font-family: var(--heading-font);
+	font-size: 36px;
+}
+
+li a {
+	text-decoration: none;
+	color: white;
+	font-family: var(--article-font);
+	line-height: 1.5;
+}
+
+li {
+	height: 3em;
+	list-style-type: none;
+}
+
+h4+p {
+	text-align: left;
+}
+
+
+
+footer ul svg {
+	width: 1em;
+	margin: 1em;
+}
+
+footer {
+	display: block;
+	padding: 24px;
+	position: absolute;
+}
+
+footer img {
+	margin: 40px 77.5px;
+	width: 239px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer ul:last-of-type {
+	display: flex;
+	flex-direction: row;
+}
+
+footer ul:last-of-type li {
+	background-color: white;
+	margin: 4px;
+	padding: 1px;
+
+}
+
+footer p {
+	font-weight: 200;
+	line-height: 1.5;
+	font-size: 14px;
+
+}
+
+footer ul {
+	padding: 0px;
+}
+
+footer ul li a {
+	font-size: 14px;
+}
+
+main ul:first-of-type {
+	display: flex;
+	flex-direction: column;
+	padding: 0px;
+	margin: 0px;
+}
+
+main ul:first-of-type li {
+	margin: 3em;
+	padding: 0px;
+}
+
+main ul:first-of-type li p {
+	font-size: 14px;
+	padding: 0px;
+	line-height: 1.65;
+	font-weight: 300;
+}
