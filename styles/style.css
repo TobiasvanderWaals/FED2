@@ -6,7 +6,7 @@
 *::before {
 	box-sizing: border-box;
 }
-
+ 
 @font-face {
 	font-family: 'Country Market';
 	src:
@@ -59,6 +59,7 @@ header {
 	background: black;
 }
 
+
 main {
 	background-color: #071520;
 	max-width: 100%;
@@ -72,7 +73,6 @@ h1 {
 }
 
 h1+img {
-	align-self: center;
 	aspect-ratio: 3/2;
 	object-fit: cover;
 
@@ -102,8 +102,26 @@ right: 2em;
 transition: translate .3s;
 position: fixed;
 translate: -100% 0%;
+color: white;
 }
+details{
+	display: flex;
+	flex-direction: column;
+	margin: 1em;
 
+}
+summary{
+	padding: 20px 0px;
+	font-family: var(--article-font);
+list-style-type: none;
+}
+details a{
+	color: white;
+	text-decoration: none;
+	font-family: var(--article-font);
+	padding: 1em;
+
+}
 header svg {
 
 	color: white;
@@ -122,7 +140,7 @@ header ul {
 
 header ul li {
 
-	height: 0px;
+height: 2em;
 }
 
 svg {
@@ -264,6 +282,7 @@ h4+p {
 footer ul svg {
 	width: 1em;
 	margin: 1em;
+	height: 1em;
 }
 
 footer {
@@ -325,3 +344,22 @@ main ul:first-of-type li p {
 	line-height: 1.65;
 	font-weight: 300;
 }
+
+@keyframes lord-animation {
+	0% { rotate: 0deg;
+	  /* jouw code hier */
+	  
+	}
+	100% { rotate: 180deg;
+	  /* jouw code hier */
+	  
+	}
+  }
+  
+  li[aria-label="lord"]:hover div {
+	/* jouw code hier */
+	animation-name: lord-animation;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+  
+  }

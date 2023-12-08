@@ -10,9 +10,9 @@ menuButton.onclick = openMenu;
 function openMenu(){
     menu.classList.add("toonMenu");
 console.log("hallo")
-}
+} 
 
-var menuSluiten = document.querySelector("nav");
+var menuSluiten = document.querySelector("nav button");
 
 menuSluiten.onclick = sluitMenu;
 
