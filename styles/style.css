@@ -104,6 +104,18 @@ position: fixed;
 translate: -100% 0%;
 color: white;
 }
+nav button{
+	margin: 1em;
+	padding-top: 0.5em;
+	height: 15px;
+	width: 15px;
+}
+nav button svg{
+	height: 15px;
+	width: 15px;
+	stroke-width: 1.5px;
+
+}
 details{
 	display: flex;
 	flex-direction: column;
@@ -111,9 +123,10 @@ details{
 
 }
 summary{
-	padding: 20px 0px;
+	padding-bottom: 1em;
 	font-family: var(--article-font);
 list-style-type: none;
+
 }
 details a{
 	color: white;
@@ -345,21 +358,21 @@ main ul:first-of-type li p {
 	font-weight: 300;
 }
 
-@keyframes lord-animation {
-	0% { rotate: 0deg;
+/* @keyframes lord-animation { */
+	/* 0% { rotate: 0deg; */
 	  /* jouw code hier */
 	  
-	}
-	100% { rotate: 180deg;
+	/* } */
+	/* 100% { rotate: 180deg; */
 	  /* jouw code hier */
 	  
-	}
-  }
+	/* } */
+  /* } */
   
-  li[aria-label="lord"]:hover div {
+  /* li[aria-label="lord"]:hover div { */
 	/* jouw code hier */
-	animation-name: lord-animation;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
+	/* animation-name: lord-animation; */
+	/* animation-duration: 1s; */
+	/* animation-fill-mode: forwards; */
   
-  }
+  /* } */
