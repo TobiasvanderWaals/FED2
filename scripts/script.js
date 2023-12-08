@@ -21,3 +21,23 @@ function sluitMenu(){
     console.log("doei")
 }
 
+// var dropdown = document.querySelector("summary");
+
+// var dropdownmenu = document.querySelector("details");
+
+// dropdown.onclick = openDetails;
+
+// function openDetails(){
+//     dropdownmenu.classList.add("toonDropDown");
+// console.log("bonjour")
+// } 
+
+// var dropSluiten = document.querySelector("summary.toonDropDown");
+
+// dropSluiten.onclick = sluitDrop;
+
+// function sluitDrop(){
+//     dropdownmenu.classList.remove("toonDropDown");
+//     console.log("OuRevoir")
+// }
+

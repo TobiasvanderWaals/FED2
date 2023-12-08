@@ -51,6 +51,13 @@ display: block;
 	max-width: 100%;
 	margin: 0;
 }
+body::-webkit-scrollbar {
+	width: 0;  /* This will hide the scrollbar */
+  }
+
+  nav::-webkit-scrollbar {
+	width: 0;  /* This will hide the scrollbar */
+  }
 
 header {
 
@@ -103,6 +110,9 @@ transition: translate .3s;
 position: fixed;
 translate: -100% 0%;
 color: white;
+display: block;
+overflow-y: auto; 
+
 }
 nav button{
 	margin: 1em;
@@ -116,6 +126,15 @@ nav button svg{
 	stroke-width: 1.5px;
 
 }
+nav a{
+	font-family: var(--article-font);
+color: white;
+text-decoration: none;
+margin-left: 1em;
+padding-bottom: 3em;
+display: block;
+font-size: 0.9em;
+}
 details{
 	display: flex;
 	flex-direction: column;
@@ -125,14 +144,17 @@ details{
 summary{
 	padding-bottom: 1em;
 	font-family: var(--article-font);
-list-style-type: none;
 
 }
-details a{
+
+
+nav details a{
 	color: white;
 	text-decoration: none;
 	font-family: var(--article-font);
 	padding: 1em;
+	margin-bottom: 0em;
+	font-size: inherit;
 
 }
 header svg {
