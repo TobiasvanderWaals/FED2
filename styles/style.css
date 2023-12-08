@@ -74,6 +74,10 @@ main {
 }
 
 
+
+main ul li{
+	margin: auto;
+}
 h1 {
 	display: none;
 
@@ -379,7 +383,78 @@ main ul:first-of-type li p {
 	line-height: 1.65;
 	font-weight: 300;
 }
+[class="details"] main ul:nth-of-type(1){
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+align-items: center;
+padding: 0.5em 1em;
+min-height: 3em;
+color: #071520;
+z-index: 1000;
+}
 
+[class="details"] main ul:nth-of-type(1) li{
+height: auto;
+margin: 0px;
+padding: 0.5em;
+}
+[class="details"] main svg{
+	stroke-width: 2px;
+	width: 100%;
+}
+[class="details"] main ul:nth-of-type(1) li a{
+	font-size: 14px;
+}
+[class="details"] main ul:nth-of-type(2){
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+}
+[class="details"] main article ul li{
+padding: 0px;
+}
+
+div{
+	position: relative;
+      overflow: hidden;
+      margin: auto;
+}
+div article:first-of-type{
+	padding: 0px;
+	display: flex;
+      transition: transform 0.5s ease-in-out;
+	  flex-direction: row;
+}
+div article:first-of-type img{
+	min-width: 100%;
+      box-sizing: border-box;
+	
+}
+[class="details"] main div svg{
+	stroke-width: 1px;
+
+}
+[class="details"] main div button{
+	cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      border: none;
+      outline: none;
+      transform: translateY(-50%);
+}
+[class="details"] main div button:first-of-type{
+	left: 10px;
+
+}
+[class="details"] main div button:last-of-type{
+	
+	right: 10px;
+}
 /* @keyframes lord-animation { */
 	/* 0% { rotate: 0deg; */
 	  /* jouw code hier */
