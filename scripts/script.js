@@ -21,23 +21,46 @@ function sluitMenu(){
     console.log("doei")
 }
 
-// var dropdown = document.querySelector("summary");
 
-// var dropdownmenu = document.querySelector("details");
+var nextButton = document.querySelector("div button:last-of-type");
 
-// dropdown.onclick = openDetails;
+var prevButton = document.querySelector("div button:first-of-type");
 
-// function openDetails(){
-//     dropdownmenu.classList.add("toonDropDown");
-// console.log("bonjour")
-// } 
+var currentIndex = 0;
 
-// var dropSluiten = document.querySelector("summary.toonDropDown");
+var slides = document.querySelectorAll("section img");
 
-// dropSluiten.onclick = sluitDrop;
+var total = slides.length;
 
-// function sluitDrop(){
-//     dropdownmenu.classList.remove("toonDropDown");
-//     console.log("OuRevoir")
-// }
+
+nextButton.onclick = next;
+prevButton.onclick = prev;
+
+
+
+function next(){
+    currentIndex = (currentIndex + 1) % total;
+    slide(currentIndex);
+    console.log('next')
+        console.log(currentIndex)
+
+    setTimeout(function () {
+        currentIndex = nextIndex;
+    }, 500);}
+
+
+function prev(){
+    currentIndex = (currentIndex - 1 + total) % total;
+    slide(currentIndex);
+    console.log('previous leon')
+    console.log(currentIndex)
+setTimeout(function () {
+        currentIndex = nextIndex;
+    }, 500);}
+
+function slide(index){
+    var prevNext = -index * 100 + '%';
+    document.querySelector("div section").style.transform = 'translateX(' + prevNext + ')';
+
+}
 

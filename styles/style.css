@@ -41,7 +41,7 @@
 
 /* jouw code */
 html {
-	width: 430px;
+	width: 100%;
 }
 
 body {
@@ -60,7 +60,7 @@ body::-webkit-scrollbar {
   }
 
 header {
-
+	z-index: 1000;
 	position: sticky;
 	top: 0em;
 	background: black;
@@ -70,7 +70,7 @@ header {
 main {
 	background-color: #071520;
 	max-width: 100%;
-
+z-index: 1;
 }
 
 
@@ -388,16 +388,14 @@ main ul:first-of-type li p {
 	flex-direction: row;
 	flex-wrap: nowrap;
 align-items: center;
-padding: 0.5em 1em;
 min-height: 3em;
 color: #071520;
-z-index: 1000;
+z-index: 999;
 }
 
 [class="details"] main ul:nth-of-type(1) li{
 height: auto;
 margin: 0px;
-padding: 0.5em;
 }
 [class="details"] main svg{
 	stroke-width: 2px;
@@ -406,13 +404,8 @@ padding: 0.5em;
 [class="details"] main ul:nth-of-type(1) li a{
 	font-size: 14px;
 }
-[class="details"] main ul:nth-of-type(2){
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
 
-}
-[class="details"] main article ul li{
+[class="details"] main section ul li{
 padding: 0px;
 }
 
@@ -421,15 +414,17 @@ div{
       overflow: hidden;
       margin: auto;
 }
-div article:first-of-type{
+div section:first-of-type{
 	padding: 0px;
 	display: flex;
-      transition: transform 0.5s ease-in-out;
 	  flex-direction: row;
+	  transition: transform 0.5s ease-in-out;
+
 }
-div article:first-of-type img{
+div section:first-of-type img{
 	min-width: 100%;
       box-sizing: border-box;
+
 	
 }
 [class="details"] main div svg{
@@ -445,31 +440,124 @@ div article:first-of-type img{
       font-size: 20px;
       border: none;
       outline: none;
-      transform: translateY(-50%);
 }
 [class="details"] main div button:first-of-type{
 	left: 10px;
-
+	background-color: transparent;
+	padding: 0em;
+margin: 0em;
 }
 [class="details"] main div button:last-of-type{
-	
+	background-color: transparent;
+	padding: 0em;
+margin: 0em;
 	right: 10px;
 }
-/* @keyframes lord-animation { */
-	/* 0% { rotate: 0deg; */
-	  /* jouw code hier */
-	  
-	/* } */
-	/* 100% { rotate: 180deg; */
-	  /* jouw code hier */
-	  
-	/* } */
-  /* } */
-  
-  /* li[aria-label="lord"]:hover div { */
-	/* jouw code hier */
-	/* animation-name: lord-animation; */
-	/* animation-duration: 1s; */
-	/* animation-fill-mode: forwards; */
-  
-  /* } */
+[class="details"] article:nth-of-type(1) h1{
+	font-family: 'Playfair Display', serif;
+	font-size: 2em;
+	font-weight: 100;
+	margin: 0.2em;
+	display: block;
+	color: white;
+	text-align: center;
+	margin-bottom: 0px;
+}
+[class="details"] h3{
+	font-family: 'montserrat', serif;
+	font-size: 1.2em;
+	font-weight: 500;
+	margin: 0.5em;
+}
+[class="details"] h4{
+	font-family: 'montserrat', serif;
+	font-size: 1em;
+	font-weight: 600;
+	margin: 0.5em;
+	text-align: center;
+}
+[class="details"] main ul:nth-of-type(2){
+	display: flex;
+	padding-bottom: 1em;
+	padding-left: 0em;
+	justify-content: center;
+	margin: 0em;
+
+
+}
+[class="details"] main ul:nth-of-type(2) li{
+
+height: 2em;
+margin: 0.2em;
+
+}
+
+[class="details"] article a{
+padding: 0em;
+margin: 1em;
+background-color: #071520;
+
+line-height: 0em;
+
+
+}
+[class="details"] article{
+	padding: 0em;
+}
+[class="details"] main ul:nth-of-type(2) a img{
+border-radius: 50%;
+margin: 0em;
+max-width: fit-content;
+
+
+	}
+	article button:nth-of-type(2){
+		font-family: 'montserrat';
+		font-weight: 600;
+		letter-spacing: 1px;
+		color: white;
+		background-color: #994545;
+		padding: 16px 30px;
+		text-decoration: none;
+		text-align: center;
+		margin-left: 2em;
+		margin-right: 2em;
+	}
+	article button{
+		font-family: 'montserrat';
+		font-weight: 600;
+		letter-spacing: 1px;
+		color: white;
+		background-color: #13202b;
+		padding: 16px 30px;
+		text-decoration: none;
+		text-align: left;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		margin-left: 2em;
+		margin-right: 2em;
+	}
+	[class="details"] main article p{
+		background-color: #13202b;
+		padding: 16px 30px;
+margin: 1em 2em;
+	}
+
+	[class="details"] main article p a strong{
+		text-decoration: underline;
+	}
+
+[class="details"] article ul a:last-of-type{
+font-weight:300;
+}
+[class="details"] article ul:last-of-type{
+	padding: 0em;
+	
+}
+[class="details"] article ul:last-of-type li{
+list-style-image: src="//www.wiezewasjes.nl/cdn/shop/t/71/assets/bullet_ster.svg?v=39811195371346284731700744486"
+;
+}
+[class="details"] article ul:last-of-type li p{
+	background-color: #071520;
+}
