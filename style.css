@@ -148,8 +148,8 @@ nav {
 	translate: -100% 0%;
 	color: white;
 	display: block;
-	overflow-y: auto;
-	z-index: 1000;
+	overflow-y: scroll;
+	
 
 }
 
@@ -691,7 +691,7 @@ h5+img {
 	margin-top: 6em;
 	width: 300px;
 	align-self: center;
-	z-index: 500;
+	z-index: 1000;
 }
 
 @keyframes flippingTheScript {
@@ -723,7 +723,7 @@ h5+img:hover {
 	gap: 2em;
 	text-align: left;
 	overflow-x: scroll;
-	overflow-y: hidden;
+	
 
 }
 
