@@ -6,7 +6,7 @@
 *::before {
 	box-sizing: border-box;
 }
- 
+
 @font-face {
 	font-family: 'Country Market';
 	src:
@@ -47,14 +47,15 @@ html {
 
 body {
 	background-color: black;
-display: block;
+	display: block;
 	position: relative;
 	max-width: 100%;
 	margin: 0;
 }
-[class='details dark-mode']{
+
+[class='details dark-mode'] {
 	background-color: white;
-display: block;
+	display: block;
 	position: relative;
 	max-width: 100%;
 	margin: 0;
@@ -62,9 +63,9 @@ display: block;
 	text-decoration: dotted;
 }
 
-[class='dark-mode']{
+[class='dark-mode'] {
 	background-color: white;
-display: block;
+	display: block;
 	position: relative;
 	max-width: 100%;
 	margin: 0;
@@ -75,14 +76,15 @@ display: block;
 body::-webkit-scrollbar {
 	width: 0;
 
-  }
+}
 
-  nav::-webkit-scrollbar {
+nav::-webkit-scrollbar {
 	width: 0;
-  }
-  section::-webkit-scrollbar{
+}
+
+section::-webkit-scrollbar {
 	height: 0;
-  }
+}
 
 header {
 	z-index: 1000;
@@ -95,14 +97,15 @@ header {
 main {
 	background-color: #071520;
 	max-width: 100%;
-z-index: 1;
+	z-index: 1;
 }
 
 
 
-main ul li{
+main ul li {
 	margin: auto;
 }
+
 h1 {
 	display: none;
 
@@ -113,7 +116,8 @@ h1+img {
 	object-fit: cover;
 
 }
-section h2{
+
+section h2 {
 	display: none;
 }
 
@@ -128,63 +132,65 @@ a img {
 img {
 	width: 100%;
 }
-nav.toonMenu{
+
+nav.toonMenu {
 	translate: 0% 0%;
 }
 
 nav {
-background-color: #071520;
-top: 0;
-left: 0;
-bottom: 0;
-right: 2em;
-transition: translate .3s;
-position: fixed;
-translate: -100% 0%;
-color: white;
-display: block;
-overflow-y: auto; 
+	background-color: #071520;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 2em;
+	transition: translate .3s;
+	position: fixed;
+	translate: -100% 0%;
+	color: white;
+	display: block;
+	overflow-y: auto;
 
 }
-nav button:focus{
-	border: 1em #994545;
-	background: #994545;
-}
-nav button{
+
+nav button {
 	margin: 1em;
 	padding-top: 0.5em;
 	height: 15px;
 	width: 15px;
 }
-nav button svg{
+
+nav button svg {
 	height: 15px;
 	width: 15px;
 	stroke-width: 1.5px;
 
 }
-nav a{
+
+nav a {
 	font-family: var(--article-font);
-color: white;
-text-decoration: none;
-margin-left: 1em;
-padding-bottom: 3em;
-display: block;
-font-size: 0.9em;
+	color: white;
+	text-decoration: none;
+	margin-left: 1em;
+	padding-bottom: 3em;
+	display: block;
+	font-size: 0.9em;
 }
-details{
+
+details {
 	display: flex;
 	flex-direction: column;
 	margin: 1em;
 
 }
-summary{
+
+summary {
 	padding-bottom: 1em;
 	font-family: var(--article-font);
 
 }
 
 
-nav details a{
+nav details a {
 	color: white;
 	text-decoration: none;
 	font-family: var(--article-font);
@@ -193,12 +199,13 @@ nav details a{
 	font-size: inherit;
 
 }
+
 header svg {
 
 	color: white;
 	stroke-width: 2px;
 	height: 20px;
-	
+
 	top: 3px;
 
 
@@ -211,19 +218,21 @@ header ul {
 
 header ul li {
 
-height: 2em;
+	height: 2em;
 }
 
 svg {
 	color: white;
 	max-height: 30px;
+	/* https://stackoverflow.com/questions/63797845/svg-path-error-path-attribute-d-expected-number */
+
 }
 
 button {
 	all: unset;
 }
 
-button svg{
+button svg {
 	height: 15px;
 }
 
@@ -236,9 +245,10 @@ header ul li:nth-of-type(1) {
 }
 
 header ul li:nth-of-type(2) {
-margin-right: 1em;
-	
+	margin-right: 1em;
+
 }
+
 header ul li:nth-of-type(3) {
 
 	margin-right: 1em;
@@ -247,7 +257,7 @@ header ul li:nth-of-type(3) {
 
 section {
 	padding-bottom: 2em;
-	
+
 }
 
 p {
@@ -402,6 +412,7 @@ main ul:first-of-type {
 	flex-direction: column;
 	padding: 0px;
 	margin: 0px;
+	/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 }
 
 main ul:first-of-type li {
@@ -415,78 +426,88 @@ main ul:first-of-type li p {
 	line-height: 1.65;
 	font-weight: 300;
 }
-[class="details"] main ul:nth-of-type(1){
+
+[class="details"] main ul:nth-of-type(1) {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-align-items: center;
-min-height: 3em;
-color: #071520;
-z-index: 999;
+	align-items: center;
+	min-height: 3em;
+	color: #071520;
+	z-index: 999;
 }
 
-[class="details"] main ul:nth-of-type(1) li{
-height: auto;
-margin: 0px;
+[class="details"] main ul:nth-of-type(1) li {
+	height: auto;
+	margin: 0px;
 }
-[class="details"] main svg{
+
+[class="details"] main svg {
 	stroke-width: 2px;
 	width: 1em;
 	height: 1em;
 }
-[class="details"] main ul:nth-of-type(1) li a{
+
+[class="details"] main ul:nth-of-type(1) li a {
 	font-size: 14px;
 }
 
-[class="details"] main section ul li{
-padding: 0px;
+[class="details"] main section ul li {
+	padding: 0px;
 }
 
-div{
+div {
 	position: relative;
-      overflow: hidden;
-      margin: auto;
+	overflow: hidden;
+	margin: auto;
 }
-div section:first-of-type{
+
+div section:first-of-type {
 	padding: 0px;
 	display: flex;
-	  flex-direction: row;
-	  transition: transform 0.5s ease-in-out;
+	flex-direction: row;
+	transition: transform 0.5s ease-in-out;
 
 }
-div section:first-of-type img{
+
+div section:first-of-type img {
 	min-width: 100%;
-      box-sizing: border-box;
+	box-sizing: border-box;
 
-	
+
 }
-[class="details"] main div svg{
+
+[class="details"] main div svg {
 	stroke-width: 1px;
 
 }
-[class="details"] main div button{
+
+[class="details"] main div button {
 	cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: 40px;
-      height: 40px;
-      font-size: 20px;
-      border: none;
-      outline: none;
+	position: absolute;
+	top: 50%;
+	width: 40px;
+	height: 40px;
+	font-size: 20px;
+	border: none;
+	outline: none;
 }
-[class="details"] main div button:first-of-type{
+
+[class="details"] main div button:first-of-type {
 	left: 10px;
 	background-color: transparent;
 	padding: 0em;
-margin: 0em;
+	margin: 0em;
 }
-[class="details"] main div button:last-of-type{
+
+[class="details"] main div button:last-of-type {
 	background-color: transparent;
 	padding: 0em;
-margin: 0em;
+	margin: 0em;
 	right: 10px;
 }
-[class="details"] article:nth-of-type(1) h1{
+
+[class="details"] article:nth-of-type(1) h1 {
 	font-family: 'Playfair Display', serif;
 	font-size: 2em;
 	font-weight: 100;
@@ -496,27 +517,30 @@ margin: 0em;
 	text-align: center;
 	margin-bottom: 0px;
 }
-[class="details"] h3{
+
+[class="details"] h3 {
 	font-family: 'montserrat', serif;
 	font-size: 1.2em;
 	font-weight: 500;
 	margin: 0.5em;
 }
-[class="details"] h4{
+
+[class="details"] h4 {
 	font-family: 'montserrat', serif;
 	font-size: 1em;
 	font-weight: 600;
 	margin: 0.5em;
 	text-align: center;
 }
-[class="details"] footer h4{
+
+[class="details"] footer h4 {
 	color: white;
-text-align: left;
+	text-align: left;
 	font-family: var(--heading-font);
 	font-size: 36px;
 }
 
-[class="details"] main ul:nth-of-type(2){
+[class="details"] main ul:nth-of-type(2) {
 	display: flex;
 	padding-bottom: 1em;
 	padding-left: 0em;
@@ -525,117 +549,131 @@ text-align: left;
 
 
 }
-[class="details"] main ul:nth-of-type(2) li{
 
-height: 2em;
-margin: 0.2em;
+[class="details"] main ul:nth-of-type(2) li {
+
+	height: 2em;
+	margin: 0.2em;
+
+}
+
+[class="details"] article a {
+	padding: 0em;
+	margin: 1em;
+	background-color: #071520;
+
+	line-height: 0em;
+
 
 }
 
-[class="details"] article a{
-padding: 0em;
-margin: 1em;
-background-color: #071520;
-
-line-height: 0em;
-
-
-}
-[class="details"] article{
+[class="details"] article {
 	padding: 0em;
 }
-[class="details"] main ul:nth-of-type(2) a img{
-border-radius: 50%;
-margin: 0em;
-max-width: fit-content;
 
+[class="details"] main ul:nth-of-type(2) a img {
+	border-radius: 50%;
+	/* https://www.w3schools.com/css/css3_images.asp */
+	margin: 0em;
+	max-width: fit-content;
 
-	}
-	article button:nth-of-type(2){
-		font-family: 'montserrat';
-		font-weight: 600;
-		letter-spacing: 1px;
-		color: white;
-		background-color: #994545;
-		padding: 16px 30px;
-		text-decoration: none;
-		text-align: center;
-		margin-left: 2em;
-		margin-right: 2em;
-	}
-	article button{
-		font-family: 'montserrat';
-		font-weight: 600;
-		letter-spacing: 1px;
-		color: white;
-		background-color: #13202b;
-		padding: 16px 30px;
-		text-decoration: none;
-		text-align: left;
-		margin-top: 1em;
-		margin-bottom: 1em;
-		margin-left: 2em;
-		margin-right: 2em;
-	}
-	[class="details"] main article p{
-		background-color: #13202b;
-		padding: 16px 30px;
-margin: 1em 2em;
-	}
-
-	[class="details"] main article p a strong{
-		text-decoration: underline;
-	}
-
-[class="details"] article ul a:last-of-type{
-font-weight:300;
 
 }
-[class="details"] article ul:last-of-type{
+
+article button:nth-of-type(2) {
+	font-family: 'montserrat';
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: white;
+	background-color: #994545;
+	padding: 16px 30px;
+	text-decoration: none;
+	text-align: center;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+article button {
+	font-family: 'montserrat';
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: white;
+	background-color: #13202b;
+	padding: 16px 30px;
+	text-decoration: none;
+	text-align: left;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+[class="details"] main article p {
+	background-color: #13202b;
+	padding: 16px 30px;
+	margin: 1em 2em;
+}
+
+[class="details"] main article p a strong {
+	text-decoration: underline;
+}
+
+[class="details"] article ul a:last-of-type {
+	font-weight: 300;
+
+}
+
+[class="details"] article ul:last-of-type {
 	padding: 0em;
-margin: 1em 2em;
+	margin: 1em 2em;
 }
-[class="details"] article ul:last-of-type li{
+
+[class="details"] article ul:last-of-type li {
 	display: flex;
-height: 2em;
+	height: 2em;
 
 }
 
-[class="details"] article ul:last-of-type li img{
-max-height: 1em;
-max-width: 1em;
+[class="details"] article ul:last-of-type li img {
+	max-height: 1em;
+	max-width: 1em;
 }
-[class="details"] article ul:last-of-type li p{
+
+[class="details"] article ul:last-of-type li p {
 	background-color: #071520;
 	text-align: left;
 	font-size: .9em;
 	padding: 0em;
 	margin: 0em 1em;
 }
-article details{
+
+article details {
 	padding: 0em 1em;
 	list-style-position: right;
 }
-article details summary{
+
+article details summary {
 	font-family: 'Playfair Display', serif;
 	color: white;
 	font-size: 1.3em;
 }
-[class="details"] article details p{
-padding: 0em;
-margin:0em 0em 1em 0em;
-background-color: #071520;
-text-align: left;
-font-size: .88em;
-line-height: 2;
+
+[class="details"] article details p {
+	padding: 0em;
+	margin: 0em 0em 1em 0em;
+	background-color: #071520;
+	text-align: left;
+	font-size: .88em;
+	line-height: 2;
 }
 
-[class="details"] article details p a{
+[class="details"] article details p a {
 	margin: 0em;
 	text-decoration: underline;
 	font-weight: 300;
 }
-h5{
+
+h5 {
 	font-family: var(--heading-font);
 	color: white;
 	text-align: center;
@@ -643,16 +681,40 @@ h5{
 	padding: 1em 0em;
 	margin: 0em;
 	grid-column: 1 / -1;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 }
-h5+img{
+
+h5+img {
 	margin-top: 6em;
 	width: 300px;
 	align-self: center;
+	z-index: 1000;
 }
 
+@keyframes flippingTheScript {
+	0% {
+		rotate: 0deg;
+		scale: 1;
+	}
+
+	50% {
+		scale: 5;
+	}
+
+	100% {
+		rotate: 360deg;
+		scale: 1;
+	}
+
+	/* https://codepen.io/Tobias-vdw/pen/jOdvajb */
+}
+
+h5+img:hover {
+	animation-name: flippingTheScript;
+	animation-duration: 1s;
+}
 
 [class="details"] main>article:nth-of-type(3)>section:first-of-type {
 	display: grid;
@@ -660,35 +722,41 @@ h5+img{
 	gap: 2em;
 	text-align: left;
 	overflow-x: auto;
-	
+
 }
+
 [class="details"] main>article:nth-of-type(3) section:first-of-type section {
 	display: inline-block;
 	width: 20em;
-	grid-row-start:2;
+	grid-row-start: 2;
 	margin-top: 4em;
 }
-[class="details"] main>article:nth-of-type(3) section img{
+
+[class="details"] main>article:nth-of-type(3) section img {
 	max-width: 100%;
-     height: auto;
+	height: auto;
 }
+
 [class="details"] main>article:nth-of-type(3) section:first-of-type section:first-of-type {
-margin-left: 3em;}
+	margin-left: 3em;
+}
 
 [class="details"] main>article:nth-of-type(3) section:first-of-type section:last-of-type {
-	margin-right: 3em;}
-	
-h6{
+	margin-right: 3em;
+}
+
+h6 {
 	text-align: center;
 	font-size: 1em;
 	margin: 1em 0em 0em 0em;
 
 }
+
 [class="details"] main>article:nth-of-type(3) section:first-of-type section p {
-font-size: .8em;
-margin: 0.5em;
-padding: 0em;
-background-color: #071520;
+	font-size: .8em;
+	margin: 0.5em;
+	padding: 0em;
+	background-color: #071520;
 }
 
 /* Donna Stam:

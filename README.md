@@ -232,8 +232,16 @@ Donna heeft me hiermee geholpen. Het lag aan de viewbox in de svg.
   Nb. Vermeld de bronnen ook in je code.
 
   1. chat.openai.com
-      Ik heb ChatGPT gebruikt voor het
-  2. bron 2
-  3. ...
+      Ik heb ChatGPT gebruikt voor wanneer ik ergens echt niet uitkwam. Zo kon ik mijn code meesturen en hielp het mij met het vinden van de correcte tags en javascript.
+  2. https://validator.w3.org/nu/#file
+      De validator
+  3. https://www.w3schools.com/cssref/css_selectors.php
+      Ik heb deze link veel gebruikt om te zoeken naar alle mogelijke tags.
+  4. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section
+      Ik heb mdn web docs veel gebruikt voor specifieke eigenschappen van elementen en tags.
+  5. Donna Stam
+      Donna heeft me veel geholpen via teams met het ontcijferen van kleine mispuntjes. Ze stuurde vaak een codepen met bruikbare code voor bijvoorbeeld een grid en een flexbox voor sliders.
+  6. Codepen.io
+      Ik heb ook veel gebruik gemaakt van de opdrachten.
 
 </details>
