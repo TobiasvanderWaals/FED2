@@ -203,20 +203,25 @@ Donna heeft me hiermee geholpen. Het lag aan de viewbox in de svg.
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/IMG_9097.PNG" width="375px" alt="home">
+    <img src="readme-images/IMG_9098.PNG" width="375px" alt="article">
+    <img src="readme-images/IMG_9098.PNG" width="375px" alt="article">
 
 
-  ### Dit ging goed/Heb ik geleerd: 
+
+  ### Process:
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Ik was echt een groentje in het begin. Mijn css skills waren erg laag en ik probeerde alles te positioneren met heights en top etc. Ik ben er nu achter dat het veeeeeel makkelijker kan en dat het dan ook responsive is.
+
+  Verder was ik in het begin enorm onzeker met code en durfde weinig nieuws te proberen. Ik focuste in het begin vooral op de opdrachten om te kijken of ik het uberhaupt snapte.
+
+  Daarnaast zat mijn 'Illustrator-state-of-mind' in de weg. Het werkte niet zoals ik dacht en daardoor liep ik vaak vast.
+
+  Ik ben blij met het eindresultaat! Ik begrijp mijn eigen code en heb  ook andere met hun code geholpen. Daar wordt ik ook wat zekerder van.
 
 
-  ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
-</details>
 
 
 
