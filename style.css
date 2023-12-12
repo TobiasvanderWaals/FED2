@@ -87,7 +87,7 @@ section::-webkit-scrollbar {
 }
 
 header {
-	z-index: 1000;
+	z-index: 1001;
 	position: sticky;
 	top: 0em;
 	background: black;
@@ -149,7 +149,7 @@ nav {
 	color: white;
 	display: block;
 	overflow-y: scroll;
-	
+	z-index: 1002
 
 }
 
