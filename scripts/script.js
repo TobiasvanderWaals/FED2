@@ -9,7 +9,7 @@ menuButton.onclick = openMenu;
 
 function openMenu(){
     menu.classList.add("toonMenu");
-console.log("hallo")
+    console.log("hallo")
 } 
 
 var menuSluiten = document.querySelector("nav button");
@@ -63,4 +63,25 @@ function slide(index){
     document.querySelector("div section").style.transform = 'translateX(' + prevNext + ')';
 
 }
+
+
+var darkLightModeButton = document.querySelector('footer button')
+var element = document.querySelector('body');
+
+darkLightModeButton.onclick = lightDark;
+
+function lightDark() {
+    element.classList.toggle("dark-mode");
+    console.log('boo');
+  }
+  
+  var darkLightModeButton = document.querySelector('footer button')
+var element = document.querySelector('body');
+
+darkLightModeButton.onclick = lightDark;
+
+function lightDark() {
+    element.classList.toggle("dark-mode");
+    console.log('boo');
+  }
 

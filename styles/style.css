@@ -29,6 +29,7 @@
 	--announcement-font: 'Playfair Display', serif;
 	--article-font: 'montserrat', serif;
 	--heading-font: 'Country Market', serif;
+
 }
 
 
@@ -51,12 +52,36 @@ display: block;
 	max-width: 100%;
 	margin: 0;
 }
+[class='details dark-mode']{
+	background-color: white;
+display: block;
+	position: relative;
+	max-width: 100%;
+	margin: 0;
+	color: black;
+	text-decoration: dotted;
+}
+
+[class='dark-mode']{
+	background-color: white;
+display: block;
+	position: relative;
+	max-width: 100%;
+	margin: 0;
+	color: black;
+	text-decoration: dotted;
+}
+
 body::-webkit-scrollbar {
-	width: 0;  /* This will hide the scrollbar */
+	width: 0;
+
   }
 
   nav::-webkit-scrollbar {
-	width: 0;  /* This will hide the scrollbar */
+	width: 0;
+  }
+  section::-webkit-scrollbar{
+	height: 0;
   }
 
 header {
@@ -88,6 +113,9 @@ h1+img {
 	object-fit: cover;
 
 }
+section h2{
+	display: none;
+}
 
 a img {
 	width: 100%;
@@ -117,6 +145,10 @@ color: white;
 display: block;
 overflow-y: auto; 
 
+}
+nav button:focus{
+	border: 1em #994545;
+	background: #994545;
 }
 nav button{
 	margin: 1em;
@@ -215,6 +247,7 @@ header ul li:nth-of-type(3) {
 
 section {
 	padding-bottom: 2em;
+	
 }
 
 p {
@@ -326,7 +359,7 @@ footer ul svg {
 
 footer {
 	display: block;
-	padding: 24px;
+	padding: 2em 0em 2em 2em;
 	position: absolute;
 }
 
@@ -334,8 +367,7 @@ footer img {
 	margin: 40px 77.5px;
 	width: 239px;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+
 }
 
 footer ul:last-of-type {
@@ -386,7 +418,7 @@ main ul:first-of-type li p {
 [class="details"] main ul:nth-of-type(1){
 	display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 align-items: center;
 min-height: 3em;
 color: #071520;
@@ -399,7 +431,8 @@ margin: 0px;
 }
 [class="details"] main svg{
 	stroke-width: 2px;
-	width: 100%;
+	width: 1em;
+	height: 1em;
 }
 [class="details"] main ul:nth-of-type(1) li a{
 	font-size: 14px;
@@ -476,6 +509,13 @@ margin: 0em;
 	margin: 0.5em;
 	text-align: center;
 }
+[class="details"] footer h4{
+	color: white;
+text-align: left;
+	font-family: var(--heading-font);
+	font-size: 36px;
+}
+
 [class="details"] main ul:nth-of-type(2){
 	display: flex;
 	padding-bottom: 1em;
@@ -549,15 +589,107 @@ margin: 1em 2em;
 
 [class="details"] article ul a:last-of-type{
 font-weight:300;
+
 }
 [class="details"] article ul:last-of-type{
 	padding: 0em;
-	
+margin: 1em 2em;
 }
 [class="details"] article ul:last-of-type li{
-list-style-image: src="//www.wiezewasjes.nl/cdn/shop/t/71/assets/bullet_ster.svg?v=39811195371346284731700744486"
-;
+	display: flex;
+height: 2em;
+
+}
+
+[class="details"] article ul:last-of-type li img{
+max-height: 1em;
+max-width: 1em;
 }
 [class="details"] article ul:last-of-type li p{
 	background-color: #071520;
+	text-align: left;
+	font-size: .9em;
+	padding: 0em;
+	margin: 0em 1em;
 }
+article details{
+	padding: 0em 1em;
+	list-style-position: right;
+}
+article details summary{
+	font-family: 'Playfair Display', serif;
+	color: white;
+	font-size: 1.3em;
+}
+[class="details"] article details p{
+padding: 0em;
+margin:0em 0em 1em 0em;
+background-color: #071520;
+text-align: left;
+font-size: .88em;
+line-height: 2;
+}
+
+[class="details"] article details p a{
+	margin: 0em;
+	text-decoration: underline;
+	font-weight: 300;
+}
+h5{
+	font-family: var(--heading-font);
+	color: white;
+	text-align: center;
+	font-size: 2em;
+	padding: 1em 0em;
+	margin: 0em;
+	grid-column: 1 / -1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h5+img{
+	margin-top: 6em;
+	width: 300px;
+	align-self: center;
+}
+
+
+[class="details"] main>article:nth-of-type(3)>section:first-of-type {
+	display: grid;
+	grid-template-rows: 3em auto;
+	gap: 2em;
+	text-align: left;
+	overflow-x: auto;
+	
+}
+[class="details"] main>article:nth-of-type(3) section:first-of-type section {
+	display: inline-block;
+	width: 20em;
+	grid-row-start:2;
+	margin-top: 4em;
+}
+[class="details"] main>article:nth-of-type(3) section img{
+	max-width: 100%;
+     height: auto;
+}
+[class="details"] main>article:nth-of-type(3) section:first-of-type section:first-of-type {
+margin-left: 3em;}
+
+[class="details"] main>article:nth-of-type(3) section:first-of-type section:last-of-type {
+	margin-right: 3em;}
+	
+h6{
+	text-align: center;
+	font-size: 1em;
+	margin: 1em 0em 0em 0em;
+
+}
+[class="details"] main>article:nth-of-type(3) section:first-of-type section p {
+font-size: .8em;
+margin: 0.5em;
+padding: 0em;
+background-color: #071520;
+}
+
+/* Donna Stam:
+https://codepen.io/d0nnaz/pen/OJdGmoq?editors=1100 */
